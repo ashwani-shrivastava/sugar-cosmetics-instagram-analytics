@@ -10,13 +10,14 @@ Sugar Cosmetics' marketing team wants to know which Instagram content drives the
 - Key fields: Post Date, Post Type (Reel, Story, Video, Image), Impressions, Reach, Likes, Comments, Shares, Saves, Profile Visits, Follows
 
 ## Tools Used
-Python (Pandas), Excel, Power BI (DAX)
+- **Python (Pandas):** data validation
+- **Power BI (DAX):** calculated measures, analysis and interactive dashboard
 
 ## Approach
-1. Validated data: dates, categories, numeric fields, zero values, duplicates
+1. Validated the data in Python: checked dates, category spellings, numeric fields, zero values and duplicates
 2. Created DAX measures and columns: Total Engagement, Engagement Rate, Month-Year, Day of Week
 3. Built 10 visualizations and combined them into one interactive Power BI dashboard with slicers
-4. Interpreted the results and prepared recommendations
+4. Interpreted the results and prepared business recommendations
 
 ## KPI Definitions
 - **Total Engagement** = Likes + Comments + Shares + Saves
@@ -38,11 +39,17 @@ Python (Pandas), Excel, Power BI (DAX)
 - Reels had the highest average engagement rate (18.61%), but the differences between Reel, Story, Video and Image were very small
 - No single format is an overwhelming winner, so recommendations should be tested further before shifting the content mix
 
-## Dashboard
-Screenshots are in the `screenshots/` folder.
+## Dashboard Preview
+
+### Final Dashboard
+![Final Dashboard](Final%20Dashboard.png)
+
+### Hashtag Analysis
+![Hashtag Analysis](Hashtag%20Analysis.png)
+
+### Top 10 Posts by Engagement Rate
+![Top 10 Posts by Engagement Rate](TOP%2010%20Posts%20BY%20Engagement%20Rate.png)
 
 ## Files
-- `data/` : dataset
-- `scripts/` : Python scripts
-- `powerbi/` : Power BI (.pbix) file
-- `screenshots/` : dashboard images
+- `Sugar_Cosmetics_Instagram_Analytics_v2.pbix` : Power BI report
+- `Final Dashboard.png`, `Hashtag Analysis.png`, `TOP 10 Posts BY Engagement Rate.png` : dashboard screenshots
